@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update
 
-RUN apt-get install -y python-pip python-dev gcc phantomjs firefox aws-cli
+RUN apt-get install -y python-pip python-dev gcc phantomjs firefox awscli
 
 RUN pip install robotframework
 
