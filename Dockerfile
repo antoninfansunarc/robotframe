@@ -1,10 +1,12 @@
-FROM ubuntu:latest
 
-RUN apt-get update
+FROM ubuntu:14.04
+
+RUN apt-get update -q
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy python-pip groff-base
+RUN pip install awscli
 
 RUN apt-get install -y python-pip python-dev gcc phantomjs firefox
 
-RUN apt-get install -y awscli
 RUN pip install robotframework
 
 RUN pip install robotframework-sshlibrary
