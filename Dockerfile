@@ -1,5 +1,5 @@
 
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN apt-get update -q
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qy python-pip groff-base
@@ -20,3 +20,4 @@ RUN pip install --upgrade pip
 #RUN chmod a+x /storefront-qa/robot/run_smoke.sh
 
 #docker run -ti bash -c “./run_smoke.sh”
+
