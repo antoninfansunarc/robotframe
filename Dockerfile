@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-
+ 
 RUN apt-get update
 
 RUN apt-get install -y python-pip python-dev gcc phantomjs firefox awscli
